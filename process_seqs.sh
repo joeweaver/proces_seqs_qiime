@@ -5,7 +5,7 @@
 # Written by Joe Weaver (jeweave4@ncsu.edu) for the 
 # de los Reyes lab #TODO dlr website
 # Version 0.1.1
-# Latest version at github ()
+# Latest version at github (https://github.com/joeweaver/proces_seqs_qiime)
 # Requires helper scripts from 'qiime_helpers' ()
 # Based on the manual workflow developed by Ling Wang (lwang18@ncsu.edu)
 #
