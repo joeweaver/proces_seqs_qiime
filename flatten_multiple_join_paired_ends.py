@@ -5,8 +5,8 @@ import os
 import shutil
 
 __author__ = "Joseph E. Weaver"
-__license__ = "Apache 2.0"
-__version__ = "0.1"
+__license__ = "MIT"
+__version__ = "0.1.1"
 __maintainer__ = "Joseph E. Weaver"
 __email__ = "jeweave4@ncsu.edu"
 
