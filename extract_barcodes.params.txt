@@ -1,0 +1,17 @@
+extract_barcodes:input_type barcode_paired_stitched
+##Tell extract barcodes how long the forward and reverse locus specific
+##sequences are.  If you're using our (circa 2014-2017 at least) 
+##'universal' prokaryotic primers, then this will be 17 and 20
+##Note that the overhanges are already removed from raw sequence files.
+## Our primers for reference:
+# Locus specific sequence sets from Yu et al., 2005:
+#   Forward: Modified 341F (CCTAYGGGRBGCASCAG)
+#   Reverse: Modified 806R (GGACTACNNGGGTATCTAAT)
+#   - This set amplifies a DNA fragment of 465 bp length flanking the V3 and V4 regions of the bacterial and archaeal 16S rRNA gene.
+# Thus the full primer sequences used in our libraries:
+# Forward (overhang + locus specific sequence) primer: 
+#   5' TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG - CCTAYGGGRBGCASCAG
+# Reverse (overhang + locus specific sequence) primer: 
+#   5' GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG - GGACTACNNGGGTATCTAAT
+extract_barcodes:bc1_len 17
+extract_barcodes:bc2_len 20

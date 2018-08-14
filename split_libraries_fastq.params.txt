@@ -1,0 +1,3 @@
+split_libraries_fastq:mapping_fps mapping.txt
+split_libraries_fastq:phred_quality_threshold 19
+split_libraries_fastq:barcode_type not-barcoded
