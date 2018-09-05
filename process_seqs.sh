@@ -157,6 +157,12 @@ parallel_assign_taxonomy_rdp.py -c 0.8 -i 5_uclust_open_ref_otus/rep_set.fna -o 
 #Begin chimera removal
 ###################
 
+## TODO
+## dereplicate before chimera removal
+## pick_de_novo_otus.py -a -O8 -f -i 5_uclust_open_ref_otus/pynast_aligned_seqs/rep_set_aligned.fasta -o 5_uclust_open_ref_otus/derep_uc/ -p dereplication_params.txt
+## where the following is in $PWD/dereplication_params.txt:
+## pick_otus:similarity 1.0
+
 /bin/echo -e '   Identifying putative chimeras. \e[31m\e[1mThis could take a while...\e[0m'
 #using silva for the aligned reference seqs. MiDAS does not have a Pynast aligned core, but it is a Silva deriviative
 #TODO we could use parallel_align_seqs on the midas refdb and rerun chimera slayer to see what's up
